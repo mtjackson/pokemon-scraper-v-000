@@ -21,10 +21,10 @@ class Pokemon
 
   def self.find(id, db)
     db.exeucte("SELECT * FROM db WHERE id = id")
-    self.all.each do |pokemon|
-      if pokemon.id == id
-        self.save(pokemon.name, pokemon.type, db)
-      end
+  #  self.all.each do |pokemon|
+  #    if pokemon.id == id
+  #      self.save(pokemon.name, pokemon.type, db)
+  #    end
     end
   end
 end
