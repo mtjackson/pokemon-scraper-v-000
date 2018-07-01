@@ -24,6 +24,6 @@ class Pokemon
     self.new(id: x[0], name: x[1], type: x[2], db: db)
   end
 
-  def alter_hp(id)
+  def alter_hp(id, db)
   end
 end
