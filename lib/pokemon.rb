@@ -21,7 +21,7 @@ class Pokemon
 
   def self.find(id, db)
     x = db.execute("SELECT * FROM pokemon WHERE id = ?", id)
-    self.new(x[0], x[1], x[2], db)
+    self.new(id: x[0], name: x[1], type: x[2], db: db)
   #  self.all.each do |pokemon|
   #    if pokemon.id == id
   #      self.save(pokemon.name, pokemon.type, db)
