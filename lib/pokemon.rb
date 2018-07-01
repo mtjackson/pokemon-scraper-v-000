@@ -25,6 +25,6 @@ class Pokemon
   #    if pokemon.id == id
   #      self.save(pokemon.name, pokemon.type, db)
   #    end
-    end
+#    end
   end
 end
