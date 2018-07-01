@@ -20,8 +20,8 @@ class Pokemon
   end
 
   def self.find(id, db)
-    x = db.execute("SELECT * FROM ? WHERE id = ?", db, id)
-    self.new()
+    x = db.execute("SELECT * FROM pokemon WHERE id = ?", db, id)
+    self.new(x)
   #  self.all.each do |pokemon|
   #    if pokemon.id == id
   #      self.save(pokemon.name, pokemon.type, db)
